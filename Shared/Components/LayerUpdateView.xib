@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="18122" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chivo-Bold.ttf">
+            <string>Chivo-Bold</string>
+        </array>
+        <array key="Chivo-Regular.ttf">
+            <string>Chivo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LayerUpdateView" customModule="Async_Art" customModuleProvider="target">
+            <connections>
+                <outlet property="blockLabel" destination="2V3-SY-vyK" id="c6D-Bb-sU3"/>
+                <outlet property="blurView" destination="iAk-eT-MWB" id="qZT-E6-Qnc"/>
+                <outlet property="imageView" destination="jmN-Rt-Qei" id="Tpw-C3-kXT"/>
+                <outlet property="ownerLabel" destination="pt2-Jy-dMm" id="X27-LF-2QZ"/>
+                <outlet property="separatorView" destination="97n-Xl-RmT" id="Z3V-1c-UMs"/>
+                <outlet property="titleLabel" destination="D8b-98-Sjc" id="tO8-y8-uDP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="780" height="384"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-eT-MWB">
+                    <rect key="frame" x="0.0" y="0.0" width="780" height="384"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iE7-f8-3hZ">
+                        <rect key="frame" x="0.0" y="0.0" width="780" height="384"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhs-fk-fwj" customClass="CircleButton" customModule="Async_Art" customModuleProvider="target">
+                    <rect key="frame" x="22" y="22" width="38" height="38"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="7eX-Fg-iDu"/>
+                        <constraint firstAttribute="height" constant="38" id="MAt-NT-kca"/>
+                    </constraints>
+                    <state key="normal" image="layer-change-icon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Layer Change" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOH-L1-hF1">
+                    <rect key="frame" x="77" y="29" width="132" height="24"/>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jmN-Rt-Qei" customClass="CachedImageView" customModule="Async_Art" customModuleProvider="target">
+                    <rect key="frame" x="77" y="90" width="226" height="226"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="226" id="BmQ-4m-9w4"/>
+                        <constraint firstAttribute="width" constant="226" id="Rat-Lz-iwA"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97n-Xl-RmT">
+                    <rect key="frame" x="353" y="90" width="4" height="226"/>
+                    <color key="backgroundColor" name="asyncPurple"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="b1h-UI-2sG"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Layer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loj-tu-qrZ">
+                    <rect key="frame" x="379" y="98" width="54" height="24"/>
+                    <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="20"/>
+                    <color key="textColor" name="lightGray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Layer Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8b-98-Sjc">
+                    <rect key="frame" x="379" y="126" width="351" height="30"/>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triggered by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPq-7b-ALu">
+                    <rect key="frame" x="379" y="176" width="119" height="24"/>
+                    <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="20"/>
+                    <color key="textColor" name="lightGray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Layer Owner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt2-Jy-dMm">
+                    <rect key="frame" x="379" y="204" width="351" height="30"/>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blockheight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fo-Ls-l65">
+                    <rect key="frame" x="379" y="254" width="110" height="24"/>
+                    <fontDescription key="fontDescription" name="Chivo-Regular" family="Chivo" pointSize="20"/>
+                    <color key="textColor" name="lightGray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2V3-SY-vyK">
+                    <rect key="frame" x="379" y="282" width="166" height="30"/>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Pmt-tb-8Ig"/>
+            <constraints>
+                <constraint firstItem="8fo-Ls-l65" firstAttribute="top" secondItem="pt2-Jy-dMm" secondAttribute="bottom" constant="20" id="4A7-ca-FPP"/>
+                <constraint firstItem="iAk-eT-MWB" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="5wV-3I-rah"/>
+                <constraint firstItem="D8b-98-Sjc" firstAttribute="top" secondItem="Loj-tu-qrZ" secondAttribute="bottom" constant="4" id="6np-VO-TQZ"/>
+                <constraint firstItem="jmN-Rt-Qei" firstAttribute="leading" secondItem="VOH-L1-hF1" secondAttribute="leading" id="7aP-Jd-JiY"/>
+                <constraint firstItem="2V3-SY-vyK" firstAttribute="leading" secondItem="8fo-Ls-l65" secondAttribute="leading" id="7py-hp-Xhp"/>
+                <constraint firstItem="Loj-tu-qrZ" firstAttribute="leading" secondItem="97n-Xl-RmT" secondAttribute="trailing" constant="22" id="9ZV-Jv-cnx"/>
+                <constraint firstItem="jmN-Rt-Qei" firstAttribute="top" secondItem="Vhs-fk-fwj" secondAttribute="bottom" constant="30" id="F9u-Vr-v7j"/>
+                <constraint firstItem="iAk-eT-MWB" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="GVh-MS-X9N"/>
+                <constraint firstItem="zPq-7b-ALu" firstAttribute="leading" secondItem="D8b-98-Sjc" secondAttribute="leading" id="Pje-xG-zH1"/>
+                <constraint firstItem="iAk-eT-MWB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TYW-4C-a8q"/>
+                <constraint firstItem="97n-Xl-RmT" firstAttribute="leading" secondItem="jmN-Rt-Qei" secondAttribute="trailing" constant="50" id="VyC-sI-F4u"/>
+                <constraint firstItem="97n-Xl-RmT" firstAttribute="top" secondItem="jmN-Rt-Qei" secondAttribute="top" id="YW0-d0-9hG"/>
+                <constraint firstItem="VOH-L1-hF1" firstAttribute="centerY" secondItem="Vhs-fk-fwj" secondAttribute="centerY" id="bwy-hu-Ude"/>
+                <constraint firstItem="D8b-98-Sjc" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-50" id="cqQ-4O-7Ej"/>
+                <constraint firstItem="pt2-Jy-dMm" firstAttribute="top" secondItem="zPq-7b-ALu" secondAttribute="bottom" constant="4" id="dhz-VN-nxb"/>
+                <constraint firstItem="iAk-eT-MWB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eAk-1s-jRs"/>
+                <constraint firstItem="2V3-SY-vyK" firstAttribute="top" secondItem="8fo-Ls-l65" secondAttribute="bottom" constant="4" id="gez-ul-mLq"/>
+                <constraint firstItem="Loj-tu-qrZ" firstAttribute="top" secondItem="97n-Xl-RmT" secondAttribute="top" constant="8" id="hrd-Ki-b3y"/>
+                <constraint firstItem="Vhs-fk-fwj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="nie-Ks-SAg"/>
+                <constraint firstItem="8fo-Ls-l65" firstAttribute="leading" secondItem="pt2-Jy-dMm" secondAttribute="leading" id="nmK-Ib-MpX"/>
+                <constraint firstItem="D8b-98-Sjc" firstAttribute="leading" secondItem="Loj-tu-qrZ" secondAttribute="leading" id="pBI-57-Mom"/>
+                <constraint firstItem="Vhs-fk-fwj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="rqK-lw-aqE"/>
+                <constraint firstItem="97n-Xl-RmT" firstAttribute="bottom" secondItem="jmN-Rt-Qei" secondAttribute="bottom" id="tSU-I4-JvK"/>
+                <constraint firstItem="VOH-L1-hF1" firstAttribute="leading" secondItem="Vhs-fk-fwj" secondAttribute="trailing" constant="17" id="tti-qV-xvs"/>
+                <constraint firstItem="pt2-Jy-dMm" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-50" id="uMP-nG-omX"/>
+                <constraint firstItem="zPq-7b-ALu" firstAttribute="top" secondItem="D8b-98-Sjc" secondAttribute="bottom" constant="20" id="xYR-ri-9uW"/>
+                <constraint firstItem="pt2-Jy-dMm" firstAttribute="leading" secondItem="zPq-7b-ALu" secondAttribute="leading" id="yCD-vi-1fy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-463.5" y="-175"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="layer-change-icon" width="10" height="22"/>
+        <namedColor name="asyncPurple">
+            <color red="0.28600001335144043" green="0.22400000691413879" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGray">
+            <color red="0.74500000476837158" green="0.74500000476837158" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

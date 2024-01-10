@@ -1,0 +1,56 @@
+PODS:
+  - Mixpanel-swift (3.1.6):
+    - Mixpanel-swift/Complete (= 3.1.6)
+  - Mixpanel-swift/Complete (3.1.6)
+  - ModernAVPlayer (1.7.3):
+    - ModernAVPlayer/Core (= 1.7.3)
+  - ModernAVPlayer/Core (1.7.3)
+  - Nuke (10.4.1)
+  - Realm (10.15.1):
+    - Realm/Headers (= 10.15.1)
+  - Realm/Headers (10.15.1)
+  - RealmSwift (10.15.1):
+    - Realm (= 10.15.1)
+  - Sentry (7.3.0):
+    - Sentry/Core (= 7.3.0)
+  - Sentry/Core (7.3.0)
+  - SnapKit (5.0.1)
+  - Socket.IO-Client-Swift (16.0.1):
+    - Starscream (~> 4.0)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - Mixpanel-swift
+  - ModernAVPlayer
+  - Nuke
+  - RealmSwift
+  - Sentry
+  - SnapKit
+  - Socket.IO-Client-Swift
+
+SPEC REPOS:
+  trunk:
+    - Mixpanel-swift
+    - ModernAVPlayer
+    - Nuke
+    - Realm
+    - RealmSwift
+    - Sentry
+    - SnapKit
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  Mixpanel-swift: d6f4fe8a60b36e578edc0aa9a2b2700c0eab5cbe
+  ModernAVPlayer: d04d53be7b620990250d0e13bee3be7217dc6214
+  Nuke: fa2d83b3ee99bb88eccc62ab6c7590e207b50096
+  Realm: fbcbde2620d51623cc5b18e28f5b165c39abef52
+  RealmSwift: e4bea8e42efad3d543aea23b56504069c6faaea2
+  Sentry: 9a4e621430e2dae4477d791f2f7e905720b6efbf
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: e1c21acb4bd67c6aff64f7f16fa4b0e628d482ba
+
+COCOAPODS: 1.11.2

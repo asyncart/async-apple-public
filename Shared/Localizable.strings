@@ -1,0 +1,32 @@
+/* 
+  LocalizableStrings.strings
+  Async Art
+
+  Created by Francis Li on 6/10/20.
+  
+*/
+"FrameColor.black" = "Black";
+"FrameColor.darkWood" = "Dark Wood";
+"FrameColor.gold" = "Gold";
+"FrameColor.lightWood" = "Light Wood";
+
+"Frame Settings" = "Frame Settings";
+
+"FrameSettingsKey.isFrameVisible" = "Frame";
+"FrameSettingsKey.frameColor" = "Frame Color";
+"FrameSettingsKey.isMatboardVisible" = "Matboard";
+"FrameSettingsKey.matColor" = "Mat Color";
+"FrameSettingsKey.orientation" = "Orientation";
+
+"MatColor.black" = "Black";
+"MatColor.blue" = "Cool";
+"MatColor.warm" = "Warm";
+"MatColor.white" = "White";
+
+"Orientation.landscape" = "LANDSCAPE";
+"Orientation.portrait" = "PORTRAIT";
+
+"ON" = "ON";
+"OFF" = "OFF";
+
+"Timezone" = "Timezone: %@";
